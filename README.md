@@ -9,7 +9,7 @@ The Repository contains three Projects:
 - messaging-system-parent-web (see [git submodule](https://github.com/beyerl/messaging-system-parent-web)): A Javascript parent component which hosts the messaging-system-child inside an iframe. The host app contains:
   - a button which triggers the child app to communicate its current state to the parent
   - a log displaying events
-- messaging-system-parent-wpf (see [([git submodule](https://github.com/beyerl/messaging-system-parent-web)): A WPF parent component which hosts the messaging-system-child inside a Webview2 control. The host app contains:
+- messaging-system-parent-wpf (see ([git submodule](https://github.com/beyerl/messaging-system-parent-web)): A WPF parent component which hosts the messaging-system-child inside a Webview2 control. The host app contains:
   - a button which triggers the child app to communicate its current state to the parent
   - a log displaying events
 
