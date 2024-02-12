@@ -26,3 +26,10 @@ git clone --recurse-submodules
 
 ### messaging-system-parent-web
 1. Open [https://beyerl.github.io/messaging-system-parent-web/](https://beyerl.github.io/messaging-system-parent-web/)
+
+## Sources
+Built with the help of Chat GPT:
+
+- [Angular Item Click App](https://chat.openai.com/c/f68d2983-da5f-4a03-9497-f9a71520c6b8)
+- [Send PostMessage to Iframe](https://chat.openai.com/share/330b6b39-65d7-4d82-a625-44ed641d1eed)
+- [WPF WebView2 Message](https://chat.openai.com/share/520c583c-f409-40eb-925d-24902b88bccf)
