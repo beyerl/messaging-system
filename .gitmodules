@@ -1,0 +1,6 @@
+[submodule "messaging-system-parent-web"]
+	path = messaging-system-parent-web
+	url = https://github.com/beyerl/messaging-system-parent-web.git
+[submodule "messaging-system-child"]
+	path = messaging-system-child
+	url = https://github.com/beyerl/messaging-system-child
