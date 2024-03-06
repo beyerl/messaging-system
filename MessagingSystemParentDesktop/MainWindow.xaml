@@ -7,18 +7,28 @@
         xmlns:wpf="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-	    <Grid.RowDefinitions>
-		    <RowDefinition Height="Auto" />
-		    <RowDefinition Height="*"/>
-	    </Grid.RowDefinitions>
-		<DockPanel Grid.Row="0">
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="*" />
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		<DockPanel Grid.Row="0" Grid.Column="0">
 			<Button Content="Sample" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Click="SampleButton_Click"/>
+		</DockPanel>
+		<Grid Grid.Row="0" Grid.Column="1">
+			<Rectangle x:Name="Rec_DragAndDrop" Height="100" Margin="0,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="Auto"/>
+			<Label x:Name="Lbl_DragAndDrop" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Content="DragStart and Drop" VerticalAlignment="Center" Height="100" Width="400" DragEnter="Lbl_DragAndDrop_OnDragEnter" Drop="Lbl_DragAndDrop_OnDrop" AllowDrop="true" FontWeight="Bold" FontFamily="Century Gothic" FontSize="20"/>
+		</Grid>
+		<Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" >
 			<TextBlock Text="Host Call Log" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0" FontSize="16"/>
 			<TextBlock x:Name="HostCallLogTextBlock" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,80,0,0"/>
-		</DockPanel>
-
-	    <wpf:WebView2 Grid.Row="1" x:Name="MessagingSystemChild" Source="https://beyerl.github.io/messaging-system-child/">
+		</Grid>
+		<wpf:WebView2 Grid.Row="2"  Grid.Column="0" Grid.ColumnSpan="2" x:Name="MessagingSystemChild" Source="http://localhost:4200/">
 		</wpf:WebView2>
 	</Grid>
 </Window>

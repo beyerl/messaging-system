@@ -69,6 +69,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="models\InteractionMessage.cs" />
+    <Compile Include="models\InteractionType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -98,6 +100,10 @@
     <PackageReference Include="Microsoft.Web.WebView2">
       <Version>1.0.2277.86</Version>
     </PackageReference>
+    <PackageReference Include="System.Text.Json">
+      <Version>8.0.2</Version>
+    </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
